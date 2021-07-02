@@ -1,8 +1,10 @@
 import React from "react";
 import "../App.css"
 import {Link} from "react-router-dom"
+import logo from "../IMAGES/weed.svg"
 
 import headerImage from "../IMAGES/hashPng.png"
+import codeIcon from "../IMAGES/code.png"
 
 
 import {data} from "../data"
@@ -110,10 +112,29 @@ export default function Home() {
                             <small>
                                 {data.hash[0].description}
                             </small>
+                            <br/>
                             <a href={"/product/" + data.hash[0].id} class="btn" >Buy Now &#8594;</a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="about" className="about">
+                <div className="logo">
+                    <img src={logo} alt="logo"></img>
+                    <h1 className="logoTitle">EL 7ECHWA</h1>
+                </div>
+                <p>
+                We’re known as the BC Online Dispensary that everyone is raving about for hash product selection. 
+                In fact, we would say we carry the biggest variety in the whole country. 
+                Other strong competitors may have 8 different hash strains, but we’ve got 60+ strains and another 24 flavoured types! 
+                Our flower game is just strong — we aim for variety. 
+                Instead of buying large quantities of a few strains, we buy small lots from all over BC to ensure we get a wide range of fresh flowers.
+                </p> 
+            </div>
+            <div id="contact" className="contact">
+                <a target="blank" href="https://github.com/elarrouji">
+                    <img src={codeIcon}></img>
+                </a>
             </div>
         </div>
     )

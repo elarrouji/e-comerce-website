@@ -632,3 +632,45 @@ button:disabled {
 
 }
 
+.about {
+    background-color: black;
+    padding: 20px 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about > p {
+    color: white;
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+}
+
+.about > .logo {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact img {
+    width: 100px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .about > p {
+        width: 100%;
+    }
+
+    .about {
+        padding: 30px;
+    }
+    .contact img {
+        width: 80px;
+        margin: auto;
+    }
+}
