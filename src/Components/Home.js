@@ -18,7 +18,7 @@ export default function Home() {
                         <h1>One Spliff A Day <br/>Keep The Evil Away</h1>
                         <p>Getting high isn't an addiction it's a commitment. <br/>
                         So get the best quality with us and be the most high.</p>
-                        <a href="/products/allProducts" class="btn">Get Your Product Now &#8594;</a>
+                        <a href="/e-comerce-website/products/allProducts" class="btn">Get Your Product Now &#8594;</a>
                     </div>
                     <div className="col-2">
                         <img src={headerImage}></img>
@@ -32,7 +32,7 @@ export default function Home() {
                         
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/products/hashProducts">
+                                <Link to="/e-comerce-website/products/hashProducts">
                                     <img alt="" src={data.hash[1].images[0]}></img>
                                 </Link>
                             </div>
@@ -40,7 +40,7 @@ export default function Home() {
                         </div>
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/products/marijuanaProducts">
+                                <Link to="/e-comerce-website/products/marijuanaProducts">
                                     <img src={data.marijuana[3].images[0]}></img>
                                 </Link>
                             </div>
@@ -48,7 +48,7 @@ export default function Home() {
                         </div>
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/products/ediblesProducts">
+                                <Link to="/e-comerce-website/products/ediblesProducts">
                                     <img src={data.edibles[5].images[0]}></img>
                                 </Link>
                             </div>
@@ -56,7 +56,7 @@ export default function Home() {
                         </div>
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/products/vapesProducts">
+                                <Link to="/e-comerce-website/products/vapesProducts">
                                     <img src={data.vapes[0].images[0]}></img>
                                 </Link>
                             </div>
@@ -69,14 +69,14 @@ export default function Home() {
                 <h2 class="title">Best Picks</h2>
                 <div class="row">
                     <div class="col-4">
-                        <Link to={"/product/" + data.hash[2].id}>
+                        <Link to={"/e-comerce-website/product/" + data.hash[2].id}>
                             <img src={data.hash[2].images[0]} alt=""></img>
                         </Link>
                         <h4>{data.hash[2].title}</h4>  
                         <p>{"$ " + data.hash[2].price}</p>
                     </div>
                     <div class="col-4">
-                        <Link to={"/product/" + data.marijuana[0].id}>
+                        <Link to={"/e-comerce-website/product/" + data.marijuana[0].id}>
                             <img src={data.marijuana[0].images[0]} alt=""></img>
                         </Link>
                         <h4>{data.marijuana[0].title}</h4>  
@@ -84,7 +84,7 @@ export default function Home() {
                     </div>
                     <div class="col-4">
                         
-                        <Link to={"/product/" + data.edibles[5].id}>
+                        <Link to={"/e-comerce-website/product/" + data.edibles[5].id}>
                             <img src={data.edibles[5].images[0]} alt=""></img>
                         </Link>
                         <h4>{data.edibles[5].title}</h4>  
@@ -92,7 +92,7 @@ export default function Home() {
                     </div>
                     <div class="col-4">
                         
-                        <Link to={"/product/" + data.vapes[4].id}>
+                        <Link to={"/e-comerce-website/product/" + data.vapes[4].id}>
                             <img src={data.vapes[4].images[0]} alt=""></img>
                         </Link>
                         <h4>{data.vapes[4].title}</h4>
@@ -113,7 +113,7 @@ export default function Home() {
                                 {data.hash[0].description}
                             </small>
                             <br/>
-                            <a href={"/product/" + data.hash[0].id} class="btn" >Buy Now &#8594;</a>
+                            <a href={"/e-comerce-website/product/" + data.hash[0].id} class="btn" >Buy Now &#8594;</a>
                         </div>
                     </div>
                 </div>

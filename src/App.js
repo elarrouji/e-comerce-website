@@ -59,16 +59,16 @@ function App() {
     <BrowserRouter>
       <Nav cart={cart} />
       <Switch>
-        <Route exact path="/EL-7ECHWA">
+        <Route exact path="/e-comerce-website">
           <Home />
         </Route>
-        <Route exact path="/products/:categorie">
+        <Route exact path="/e-comerce-website/products/:categorie">
           <Products />
         </Route>
-        <Route exact path="/product/:key">
+        <Route exact path="/e-comerce-website/product/:key">
           <ProductDetail addElement = {addElement} />
         </Route>  
-        <Route exact path="/cart/">
+        <Route exact path="/e-comerce-website/cart/">
           <Cart quantity={quantity} changeQuantity={changeQuantity} remove={remove} cart={cart}/>
         </Route>
       </Switch>

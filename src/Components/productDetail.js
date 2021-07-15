@@ -59,7 +59,7 @@ export default function ProductDetail(props) {
         return (
             
             <div className="col-4">
-                <Link to={"/product/" + elem.id}>
+                <Link to={"/e-comerce-website/product/" + elem.id}>
                     <img alt="" src={elem.images[0]}></img>
                 </Link>
                 <h4>{elem.title}</h4>  
@@ -97,7 +97,7 @@ export default function ProductDetail(props) {
             <div className="smallContainer">
                 <div className="row row-2">
                     <h2>Related Products</h2>
-                    <Link to="/products/allProducts">
+                    <Link to="/e-comerce-website/products/allProducts">
                         <p>View More</p>
                     </Link>    
                 </div>

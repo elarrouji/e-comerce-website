@@ -25,7 +25,7 @@ export default function Products(props) {
 
             return (
                 <div className="col-4">
-                    <Link to={"/product/" + p.id}>
+                    <Link to={"/e-comerce-website/product/" + p.id}>
                         <img src={p.images[0]}></img>
                     </Link>
                     <h4>{p.title}</h4>  
@@ -40,7 +40,7 @@ export default function Products(props) {
             return (
                 
                 <div className="col-4">
-                    <Link to={"/product/" + p.id}>
+                    <Link to={"/e-comerce-website/product/" + p.id}>
                     <img src={p.images[0]}></img>
                     </Link>
                     <h4>{p.title}</h4>  
@@ -55,7 +55,7 @@ export default function Products(props) {
             return (
                 
                 <div className="col-4">
-                    <Link to={"/product/" + p.id}>
+                    <Link to={"/e-comerce-website/product/" + p.id}>
                     <img src={p.images[0]}></img>
                     </Link>
                     <h4>{p.title}</h4>  
@@ -70,7 +70,7 @@ export default function Products(props) {
             return (
                 
                 <div className="col-4">
-                    <Link to={"/product/" + p.id}>
+                    <Link to={"/e-comerce-website/product/" + p.id}>
                     <img src={p.images[0]}></img>
                     </Link>
                     <h4>{p.title}</h4>
@@ -84,7 +84,7 @@ export default function Products(props) {
                 return (
                     
                     <div className="col-4">
-                        <Link to={"/product/" + p.id}>
+                        <Link to={"/e-comerce-website/product/" + p.id}>
                         <img src={p.images[0]}></img>
                         </Link>
                         <h4>{p.title}</h4>  

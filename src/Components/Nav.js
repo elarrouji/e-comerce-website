@@ -59,7 +59,7 @@ export default function Nav(props) {
 
     return (
         <div className="navbar">
-            <Link to="/">
+            <Link to="/e-comerce-website">
             <div className="logo">
                 <img src={logo} alt="logo"></img>
                 <h1 className="logoTitle">EL 7ECHWA</h1>
@@ -71,20 +71,20 @@ export default function Nav(props) {
                         <span>Products</span>
                         <div className="subMenu">
                             
-                            <Link to="/products/hashProducts">
+                            <Link to="/e-comerce-website/products/hashProducts">
                                 <span>Hash</span>
                             </Link>
-                            <Link to="/products/marijuanaProducts">
+                            <Link to="/e-comerce-website/products/marijuanaProducts">
                                 <span>Marijuana</span>
                             </Link>
-                            <Link to="/products/ediblesProducts">
+                            <Link to="/e-comerce-website/products/ediblesProducts">
                                 <span>Edibles</span>
                             </Link>
                             
-                            <Link to="/products/vapesProducts">
+                            <Link to="/e-comerce-website/products/vapesProducts">
                                 <span>Vapes</span>
                             </Link>
-                            <Link to="/products/allProducts">
+                            <Link to="/e-comerce-website/products/allProducts">
                                 <span>All</span>
                             </Link>
                         </div>
@@ -93,7 +93,7 @@ export default function Nav(props) {
                     <li>About</li>
                 </ul>
             </nav>
-            <Link to="/cart/">
+            <Link to="/e-comerce-website/cart/">
                 <div className="cartIcon">
                     <span style={spanStyle}>{props.cart.length}</span>
                     <img className="cartImg" alt="" src={cartImg}>
