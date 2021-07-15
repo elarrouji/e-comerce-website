@@ -59,7 +59,7 @@ function App() {
     <BrowserRouter>
       <Nav cart={cart} />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/EL-7ECHWA">
           <Home />
         </Route>
         <Route exact path="/products/:categorie">
