@@ -102,7 +102,7 @@ export default function Products(props) {
     function handleSelect(e) {
         categorie = e.target.value
         console.log(selectedCat)
-        history.push("/products/" + categorie)
+        history.push("/e-comerce-website/products/" + categorie)
     }
 
     function sortUp() {
@@ -113,7 +113,7 @@ export default function Products(props) {
                     return a.price - b.price
                 })
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "hashProducts") {
             setHash(
                 hash.sort((a, b) => {
@@ -121,7 +121,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "marijuanaProducts") {
             setMarijuana(
                 marijuana.sort((a, b) => {
@@ -129,7 +129,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "vapesProducts") {
             setVapes(
                 vapes.sort((a, b) => {
@@ -137,7 +137,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "allProducts") {
             setAll(
                 all.sort((a, b) => {
@@ -145,7 +145,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         }
     }
 
@@ -157,7 +157,7 @@ export default function Products(props) {
                     return b.price - a.price
                 })
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "hashProducts") {
             setHash(
                 hash.sort((a, b) => {
@@ -165,7 +165,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "marijuanaProducts") {
             setMarijuana(
                 marijuana.sort((a, b) => {
@@ -173,7 +173,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "vapesProducts") {
             setVapes(
                 vapes.sort((a, b) => {
@@ -181,7 +181,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         } else if (categorie == "allProducts") {
             setAll(
                 all.sort((a, b) => {
@@ -189,7 +189,7 @@ export default function Products(props) {
                 })
                 
             )
-            history.push("/products/" + categorie)
+            history.push("/e-comerce-website/products/" + categorie)
         }
     }
 
