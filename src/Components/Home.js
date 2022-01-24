@@ -1,9 +1,10 @@
 import React from "react";
 import "../App.css"
 import {Link} from "react-router-dom"
-import logo from "../IMAGES/weed.svg"
+import logo from "../IMAGES/logo.png"
 
-import headerImage from "../IMAGES/hashPng.png"
+
+import headerImage from "../IMAGES/header2.png"
 import codeIcon from "../IMAGES/code.png"
 
 
@@ -15,9 +16,9 @@ export default function Home() {
             <div className="header">
                 <div className="row">
                     <div className="col-2">
-                        <h1>One Spliff A Day <br/>Keep The Evil Away</h1>
-                        <p>Getting high isn't an addiction it's a commitment. <br/>
-                        So get the best quality with us and be the most high.</p>
+                        <h1>Don't just stare at Art <br/>Make it a part of You</h1>
+                        <p>Every piece we are offering is unique ans speacial. <br/>
+                        Because we believe that every customer is unique and special.</p>
                         <a href="/e-comerce-website/products/allProducts" class="btn">Get Your Product Now &#8594;</a>
                     </div>
                     <div className="col-2">
@@ -32,35 +33,35 @@ export default function Home() {
                         
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/e-comerce-website/products/hashProducts">
-                                    <img alt="" src={data.hash[1].images[0]}></img>
+                                <Link to="/e-comerce-website/products/shoesProducts">
+                                    <img alt="" src={data.shoes[1].images[0]}></img>
                                 </Link>
                             </div>
-                            <h3>Hash</h3>
+                            <h3>Shoes</h3>
                         </div>
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/e-comerce-website/products/marijuanaProducts">
-                                    <img src={data.marijuana[3].images[0]}></img>
+                                <Link to="/e-comerce-website/products/pantsProducts">
+                                    <img src={data.pants[3].images[0]}></img>
                                 </Link>
                             </div>
-                            <h3>Kush</h3>
+                            <h3>Pants</h3>
                         </div>
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/e-comerce-website/products/ediblesProducts">
-                                    <img src={data.edibles[5].images[0]}></img>
+                                <Link to="/e-comerce-website/products/upsProducts">
+                                    <img src={data.ups[5].images[0]}></img>
                                 </Link>
                             </div>
-                            <h3>Edibles</h3>
+                            <h3>Ups</h3>
                         </div>
                         <div className="col-4">
                             <div className="imgContainer">
-                                <Link to="/e-comerce-website/products/vapesProducts">
-                                    <img src={data.vapes[0].images[0]}></img>
+                                <Link to="/e-comerce-website/products/accessoriesProducts">
+                                    <img src={data.accessories[0].images[0]}></img>
                                 </Link>
                             </div>
-                            <h3>Vapes</h3>
+                            <h3>Accessories</h3>
                         </div>
                     </div>
                 </div>
@@ -69,34 +70,34 @@ export default function Home() {
                 <h2 class="title">Best Picks</h2>
                 <div class="row">
                     <div class="col-4">
-                        <Link to={"/e-comerce-website/product/" + data.hash[2].id}>
-                            <img src={data.hash[2].images[0]} alt=""></img>
+                        <Link to={"/e-comerce-website/product/" + data.shoes[2].id}>
+                            <img src={data.shoes[2].images[0]} alt=""></img>
                         </Link>
-                        <h4>{data.hash[2].title}</h4>  
-                        <p>{"$ " + data.hash[2].price}</p>
+                        <h4>{data.shoes[2].title}</h4>  
+                        <p>{"$ " + data.shoes[2].price}</p>
                     </div>
                     <div class="col-4">
-                        <Link to={"/e-comerce-website/product/" + data.marijuana[0].id}>
-                            <img src={data.marijuana[0].images[0]} alt=""></img>
+                        <Link to={"/e-comerce-website/product/" + data.pants[0].id}>
+                            <img src={data.pants[0].images[0]} alt=""></img>
                         </Link>
-                        <h4>{data.marijuana[0].title}</h4>  
-                        <p>{"$ " + data.marijuana[0].price}</p>
-                    </div>
-                    <div class="col-4">
-                        
-                        <Link to={"/e-comerce-website/product/" + data.edibles[5].id}>
-                            <img src={data.edibles[5].images[0]} alt=""></img>
-                        </Link>
-                        <h4>{data.edibles[5].title}</h4>  
-                        <p>{"$ " + data.edibles[5].price}</p>
+                        <h4>{data.pants[0].title}</h4>  
+                        <p>{"$ " + data.pants[0].price}</p>
                     </div>
                     <div class="col-4">
                         
-                        <Link to={"/e-comerce-website/product/" + data.vapes[4].id}>
-                            <img src={data.vapes[4].images[0]} alt=""></img>
+                        <Link to={"/e-comerce-website/product/" + data.ups[5].id}>
+                            <img src={data.ups[5].images[0]} alt=""></img>
                         </Link>
-                        <h4>{data.vapes[4].title}</h4>
-                        <p>{"$ " + data.vapes[4].price}</p>
+                        <h4>{data.ups[5].title}</h4>  
+                        <p>{"$ " + data.ups[5].price}</p>
+                    </div>
+                    <div class="col-4">
+                        
+                        <Link to={"/e-comerce-website/product/" + data.accessories[2].id}>
+                            <img src={data.accessories[2].images[0]} alt=""></img>
+                        </Link>
+                        <h4>{data.accessories[2].title}</h4>
+                        <p>{"$ " + data.accessories[2].price}</p>
                     </div>
                 </div>
             </div>
@@ -104,16 +105,16 @@ export default function Home() {
                 <div class="small-container">
                     <div class="row">
                         <div class="col-2">
-                            <img src={data.hash[0].images[0]}></img>
+                            <img src={data.shoes[0].images[0]}></img>
                         </div>
                         <div class="col-2">
-                            <p>Exlusively Available on EL 7ECHWA</p>
-                            <h1>{data.hash[0].title}</h1>
+                            <p>Exlusively Available on "Wear Art"</p>
+                            <h1>{data.shoes[0].title}</h1>
                             <small>
-                                {data.hash[0].description}
+                                {data.shoes[0].description}
                             </small>
                             <br/>
-                            <a href={"/e-comerce-website/product/" + data.hash[0].id} class="btn" >Buy Now &#8594;</a>
+                            <a href={"/e-comerce-website/product/" + data.shoes[0].id} class="btn" >Buy Now &#8594;</a>
                         </div>
                     </div>
                 </div>
@@ -121,14 +122,13 @@ export default function Home() {
             <div id="about" className="about">
                 <div className="logo">
                     <img src={logo} alt="logo"></img>
-                    <h1 className="logoTitle">EL 7ECHWA</h1>
+                    <h1 className="logoTitle">Wear Art</h1>
                 </div>
                 <p>
-                We’re known as the BC Online Dispensary that everyone is raving about for hash product selection. 
-                In fact, we would say we carry the biggest variety in the whole country. 
-                Other strong competitors may have 8 different hash strains, but we’ve got 60+ strains and another 24 flavoured types! 
-                Our flower game is just strong — we aim for variety. 
-                Instead of buying large quantities of a few strains, we buy small lots from all over BC to ensure we get a wide range of fresh flowers.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p> 
             </div>
             <div id="contact" className="contact">

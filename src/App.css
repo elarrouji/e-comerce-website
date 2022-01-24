@@ -28,8 +28,8 @@
 
 .btn {
     display: inline-block;
-    background-color: #f1f5f0;
-    color: rgb(19, 82, 11);
+    background-color: #eaebfe;
+    color: #022954;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
@@ -37,7 +37,7 @@
 }
 
 .header {
-    background: radial-gradient(#fff, #6c756e);
+    background: radial-gradient(#eaebfe, #354c7c);
 }
 
 .header .row {
@@ -45,7 +45,8 @@
 }
 
 .btn:hover {
-    background-color: #93a79c;
+    background-color: #354c7c;
+    color: #eaebfe;
 }
 
 .header {
@@ -125,7 +126,7 @@ a {
    margin: 0 auto 80px;
    position: relative;
    line-height: 60px; 
-   color: #555;
+   color: #505a74;
 }
 
 .title::after {
@@ -141,7 +142,7 @@ a {
 }
 
 h4 {
-    color: #555;
+    color: #505a74;
     font-weight: normal;
 }
 
@@ -154,7 +155,7 @@ h4 {
 }
 
 .offer {
-    background: radial-gradient(#fff, #6c756e);
+    background: radial-gradient(#eaebfe, #354c7c);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -164,7 +165,7 @@ h4 {
 }
 
 small {
-    color: #555;
+    color: #505a74;
 }
 
 
@@ -268,7 +269,7 @@ nav ul li:hover {
 
 .logoTitle {
     font-family: 'Freckle Face', cursive;
-    background: -webkit-linear-gradient(rgb(2, 114, 38), rgb(2, 34, 5));
+    background: -webkit-linear-gradient(#6e7199, #354c7c, #022954);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
@@ -319,7 +320,7 @@ select {
     border-radius: 5px;
     background-color: white;
     font-size: 14px;
-    border: 2px solid rgb(96, 139, 96);
+    border: 2px solid #354c7c;
 }
 
 select:focus {
@@ -383,7 +384,7 @@ select:focus {
 
 .page-btn span {
     display: inline-block;
-    border:  1px solid #75a56e;
+    border:  1px solid #354c7c;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -393,7 +394,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-    background-color: #75a56e;
+    background-color: #354c7c;
     color: white;
 }
 
@@ -445,7 +446,7 @@ select:focus {
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 2px solid rgb(96, 139, 96);
+    border: 2px solid #354c7c;
 }
 
 .singleProduct input:focus {
@@ -634,7 +635,7 @@ button:disabled {
 
 .about {
     background-color: black;
-    padding: 20px 200px;
+    padding: 100px 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -672,5 +673,8 @@ button:disabled {
     .contact img {
         width: 80px;
         margin: auto;
+    }
+    .about {
+        padding: 100px 0px;
     }
 }

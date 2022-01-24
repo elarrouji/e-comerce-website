@@ -11,16 +11,16 @@ export default function Products(props) {
 
     let header;
     
-    const [all, setAll] = useState([...data.hash, ...data.marijuana, ...data.vapes, ...data.edibles])
-    const [hash, setHash] = useState(data.hash)
-    const [vapes, setVapes] = useState(data.vapes)
-    const [edibles, setEdibles] = useState(data.edibles)
-    const [marijuana, setMarijuana] = useState(data.marijuana)
+    const [all, setAll] = useState([...data.shoes, ...data.pants, ...data.ups, ...data.accessories])
+    const [shoes, setShoes] = useState(data.shoes)
+    const [vapes, setAccessories] = useState(data.accessories)
+    const [edibles, setUps] = useState(data.ups)
+    const [pants, setPants] = useState(data.pants)
 
     let productDiv;
 
-    if (categorie == "ediblesProducts") {
-        header = "Edibles"
+    if (categorie == "upsProducts") {
+        header = "Ups"
         productDiv = edibles.map(p => {
 
             return (
@@ -33,9 +33,9 @@ export default function Products(props) {
                 </div>
                 )
             })
-    } else if (categorie == "hashProducts") {
-        header = "Hash"
-        productDiv = hash.map(p => {
+    } else if (categorie == "shoesProducts") {
+        header = "Shoes"
+        productDiv = shoes.map(p => {
 
             return (
                 
@@ -48,9 +48,9 @@ export default function Products(props) {
                 </div>
                 )
             })
-    } else if (categorie == "marijuanaProducts") {
-        header = "Marijuana"
-        productDiv = marijuana.map(p => {
+    } else if (categorie == "pantsProducts") {
+        header = "Pants"
+        productDiv = pants.map(p => {
 
             return (
                 
@@ -63,8 +63,8 @@ export default function Products(props) {
                 </div>
                 )
             })
-    } else if (categorie == "vapesProducts") {
-        header = "Vapes"
+    } else if (categorie == "accessoriesProducts") {
+        header = "Accessories"
         productDiv = vapes.map(p => {
 
             return (
@@ -107,31 +107,31 @@ export default function Products(props) {
 
     function sortUp() {
         
-        if (categorie == "ediblesProducts") {
-            setEdibles(
+        if (categorie == "upsProducts") {
+            setUps(
                 edibles.sort((a, b) => {
                     return a.price - b.price
                 })
             )
             history.push("/e-comerce-website/products/" + categorie)
-        } else if (categorie == "hashProducts") {
-            setHash(
-                hash.sort((a, b) => {
+        } else if (categorie == "shoesProducts") {
+            setShoes(
+                shoes.sort((a, b) => {
                     return a.price - b.price
                 })
                 
             )
             history.push("/e-comerce-website/products/" + categorie)
-        } else if (categorie == "marijuanaProducts") {
-            setMarijuana(
-                marijuana.sort((a, b) => {
+        } else if (categorie == "pantsProducts") {
+            setPants(
+                pants.sort((a, b) => {
                     return a.price - b.price
                 })
                 
             )
             history.push("/e-comerce-website/products/" + categorie)
-        } else if (categorie == "vapesProducts") {
-            setVapes(
+        } else if (categorie == "accessoriesProducts") {
+            setAccessories(
                 vapes.sort((a, b) => {
                     return a.price - b.price
                 })
@@ -151,31 +151,31 @@ export default function Products(props) {
 
     function sortDown() {
         
-        if (categorie == "ediblesProducts") {
-            setEdibles(
+        if (categorie == "upsProducts") {
+            setUps(
                 edibles.sort((a, b) => {
                     return b.price - a.price
                 })
             )
             history.push("/e-comerce-website/products/" + categorie)
-        } else if (categorie == "hashProducts") {
-            setHash(
-                hash.sort((a, b) => {
+        } else if (categorie == "shoesProducts") {
+            setShoes(
+                shoes.sort((a, b) => {
                     return b.price - a.price
                 })
                 
             )
             history.push("/e-comerce-website/products/" + categorie)
-        } else if (categorie == "marijuanaProducts") {
-            setMarijuana(
-                marijuana.sort((a, b) => {
+        } else if (categorie == "pantsProducts") {
+            setPants(
+                pants.sort((a, b) => {
                     return b.price - a.price
                 })
                 
             )
             history.push("/e-comerce-website/products/" + categorie)
-        } else if (categorie == "vapesProducts") {
-            setVapes(
+        } else if (categorie == "accessoriesProducts") {
+            setAccessories(
                 vapes.sort((a, b) => {
                     return b.price - a.price
                 })
@@ -209,10 +209,10 @@ export default function Products(props) {
                     <select onChange={handleSelect} defaultValue="categorie" name="sort" id="sort">
                         <option value="categorie" disabled hidden>Categories :</option>
                         <option value="allProducts">All</option>
-                        <option value="hashProducts">Hash</option>
-                        <option value="marijuanaProducts">Marijuana</option>
-                        <option value="ediblesProducts">Edibles</option>
-                        <option value="vapesProducts">Vapes</option>
+                        <option value="shoesProducts">Shoes</option>
+                        <option value="pantsProducts">Pants</option>
+                        <option value="upsProducts">Ups</option>
+                        <option value="accessoriesProducts">Accessories</option>
                     </select>
                 </div>
                 <div className="sort">

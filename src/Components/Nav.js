@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "../App.css"
 import logo from "../IMAGES/weed.svg"
+import logo1 from "../IMAGES/logo.png"
 import cartImg from "../IMAGES/cart.png"
 import menuImg from "../IMAGES/menu.png"
 
@@ -61,8 +62,8 @@ export default function Nav(props) {
         <div className="navbar">
             <Link to="/e-comerce-website">
             <div className="logo">
-                <img src={logo} alt="logo"></img>
-                <h1 className="logoTitle">EL 7ECHWA</h1>
+                <img src={logo1} alt="logo"></img>
+                <h1 className="logoTitle">Wear Art</h1>
             </div>
             </Link>
             <nav>
@@ -71,18 +72,18 @@ export default function Nav(props) {
                         <span>Products</span>
                         <div className="subMenu">
                             
-                            <Link to="/e-comerce-website/products/hashProducts">
-                                <span>Hash</span>
+                            <Link to="/e-comerce-website/products/shoesProducts">
+                                <span>Shoes</span>
                             </Link>
-                            <Link to="/e-comerce-website/products/marijuanaProducts">
-                                <span>Marijuana</span>
+                            <Link to="/e-comerce-website/products/pantsProducts">
+                                <span>Pants</span>
                             </Link>
-                            <Link to="/e-comerce-website/products/ediblesProducts">
-                                <span>Edibles</span>
+                            <Link to="/e-comerce-website/products/upsProducts">
+                                <span>Ups</span>
                             </Link>
                             
-                            <Link to="/e-comerce-website/products/vapesProducts">
-                                <span>Vapes</span>
+                            <Link to="/e-comerce-website/products/accessoriesProducts">
+                                <span>Accessories</span>
                             </Link>
                             <Link to="/e-comerce-website/products/allProducts">
                                 <span>All</span>

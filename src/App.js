@@ -10,7 +10,7 @@ import {data} from "./data"
 
 function App() {
 
-  let all = [...data.hash, ...data.marijuana, ...data.edibles, ...data.vapes]
+  let all = [...data.shoes, ...data.pants, ...data.ups, ...data.accessories]
 
   const [cart, setCart] = useState([])
   const [quantity, setQuantity] = useState([])

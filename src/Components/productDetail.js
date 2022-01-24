@@ -5,7 +5,7 @@ import {data} from "../data"
 
 export default function ProductDetail(props) {
 
-    let all = [...data.hash, ...data.marijuana, ...data.vapes, ...data.edibles]
+    let all = [...data.shoes, ...data.pants, ...data.ups, ...data.accessories]
 
     const [disabled, setDisabled] = useState(false) 
     
@@ -80,7 +80,7 @@ export default function ProductDetail(props) {
                         </div>
                     </div>
                     <div className="col-2">
-                        <p>Home / Hash</p>
+                        <p>Home / shoes</p>
                         <h1 className="productTitle" >{product.title}</h1>
                         <h4>{"$" + product.price}</h4>
                         <button disabled={disabled} onClick={ () => { 
