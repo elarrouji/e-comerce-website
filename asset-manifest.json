@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/e-comerce-website/static/css/main.4efc12b3.chunk.css",
-    "main.js": "/e-comerce-website/static/js/main.2cdc41dd.chunk.js",
-    "main.js.map": "/e-comerce-website/static/js/main.2cdc41dd.chunk.js.map",
+    "main.js": "/e-comerce-website/static/js/main.381c4b3d.chunk.js",
+    "main.js.map": "/e-comerce-website/static/js/main.381c4b3d.chunk.js.map",
     "runtime-main.js": "/e-comerce-website/static/js/runtime-main.0931c5e8.js",
     "runtime-main.js.map": "/e-comerce-website/static/js/runtime-main.0931c5e8.js.map",
     "static/js/2.b2574598.chunk.js": "/e-comerce-website/static/js/2.b2574598.chunk.js",
@@ -48,13 +48,12 @@
     "static/media/twoTone1.c5d939bc.jpg": "/e-comerce-website/static/media/twoTone1.c5d939bc.jpg",
     "static/media/twoTone2.43e25d0a.jpg": "/e-comerce-website/static/media/twoTone2.43e25d0a.jpg",
     "static/media/vanGochVarsity.8a882420.png": "/e-comerce-website/static/media/vanGochVarsity.8a882420.png",
-    "static/media/vanGochVarsity2.d3b5c9f9.png": "/e-comerce-website/static/media/vanGochVarsity2.d3b5c9f9.png",
-    "static/media/weed.8156a515.svg": "/e-comerce-website/static/media/weed.8156a515.svg"
+    "static/media/vanGochVarsity2.d3b5c9f9.png": "/e-comerce-website/static/media/vanGochVarsity2.d3b5c9f9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0931c5e8.js",
     "static/js/2.b2574598.chunk.js",
     "static/css/main.4efc12b3.chunk.css",
-    "static/js/main.2cdc41dd.chunk.js"
+    "static/js/main.381c4b3d.chunk.js"
   ]
 }
